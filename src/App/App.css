@@ -1,7 +1,28 @@
+.App {
+    display: flex;
+    margin: 20px auto;
+    max-width: 1000px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 700px) {
+    .App {
+        flex-direction: column;
+        margin: 0;
+    }
+}
+
+.left, .right {
+    box-sizing: border-box;
+    padding: 15px;
+}
+
 .left {
     background-color: lavender;
+    flex: 1;
 }
 
 .right {
     background-color: antiquewhite;
+    flex: 2;
 }
