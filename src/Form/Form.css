@@ -1,7 +1,8 @@
 .form-container {
     flex: 1;
+    position: relative;
     display: block;
-    width: 100%;
+    margin: 0 auto;
 }
 
 input[type="text"] {
@@ -10,6 +11,16 @@ input[type="text"] {
     background: none;
     font-family: 'Lato', sans-serif;
     font-size: 1.1em;
+    width: 120px;
+    line-height: 1.5em;
+    margin: 0 15px;
+    outline: none;
+    color: var(--text-color);
+}
+
+input[type="text"]::placeholder {
+    color: var(--text-color);
+    opacity: 0.5;
 }
 
 button {
@@ -18,10 +29,13 @@ button {
     border-radius: 4px;
     background: var(--background-color);
     color: var(--text-color);
-    border: solid 2px var(--accent-color);
+    /*border: solid 1px var(--accent-color);*/
+    border: none;
     font-size: 1.2em;
     cursor: pointer;
     transition: 0.1s;
+    margin: 0 15px;
+    outline: none;
 }
 
 button:hover {

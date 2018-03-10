@@ -1,0 +1,16 @@
+.weather-container {
+    flex: 5;
+    margin-left: 14%;
+}
+
+.weather-container span {
+    color: var(--accent-color);
+    font-size: 1em;
+}
+
+.weather-container h3 {
+    font-size: 2.4em;
+    text-align: center;
+    margin: 0 0 2em;
+}
+
