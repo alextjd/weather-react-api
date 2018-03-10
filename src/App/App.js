@@ -13,12 +13,12 @@ class App extends Component {
 
     //Constructor in ECMAScript6
     state = {
-        "city": '',
-        "country" : '',
-        "temperature" : '',
-        "humidity" : '',
-        "conditions" : '',
-        "error" : ''
+        "city": undefined,
+        "country": undefined,
+        "temperature": undefined,
+        "humidity": undefined,
+        "conditions": undefined,
+        "error": undefined
     };
 
     //Get the weather of a specific city
@@ -33,10 +33,32 @@ class App extends Component {
         //Request using Fetch with asynchronous programming (async/await)
         const response = await fetch('http://api.openweathermap.org/data/2.5/weather?q='
             + city + ',' + country + '&appid=' + API_KEY);
-
         const data = await response.json();
 
+        //Check if the response is correct or not
+        if (data.name && data.sys.country) {
+            this.setState({
+                "city": data.name,
+                "country": data.sys.country,
+                "temperature": data.main.temp,
+                "humidity": data.main.humidity,
+                "conditions": data.weather[0].description,
+                "error": ''
+            });
+        } else {
+            //Failed request or wrong input
+            const msg = data.cod === 404 ?
+                'Something went wrong looking for that city.' : 'Please check if you are entering correct values.';
 
+            this.setState({
+                "city": null,
+                "country": undefined,
+                "temperature": undefined,
+                "humidity": undefined,
+                "conditions": undefined,
+                "error": msg
+            });
+        }
     };
 
 
