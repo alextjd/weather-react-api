@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans:400,400i');
 
 body {
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
     font-family: 'Lato', sans-serif;
+}
+
+:root {
+    --background-color: #20243e;
+    --text-color: #f9f7ff;
+    --accent-color: #ecaf9b;
 }
 
