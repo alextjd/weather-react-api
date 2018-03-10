@@ -1,0 +1,15 @@
+@media (max-width: 700px) {
+    .App {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .left {
+        border-right: none !important;
+        border-bottom: solid 1px var(--accent-color);
+    }
+
+    .right {
+        background-color: var(--background-color);
+    }
+}
