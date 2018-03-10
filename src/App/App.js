@@ -11,6 +11,16 @@ class App extends Component {
 
     //ECMAScript6, baby: arrow functions, new constructor, etc, etc.
 
+    //Constructor in ECMAScript6
+    state = {
+        "city": '',
+        "country" : '',
+        "temperature" : '',
+        "humidity" : '',
+        "conditions" : '',
+        "error" : ''
+    };
+
     //Get the weather of a specific city
     handleGetWeather = async (e) => {
         //Prevent the form from submiting the usual way
@@ -26,10 +36,8 @@ class App extends Component {
 
         const data = await response.json();
 
-        console.log(data);
+
     };
-
-
 
 
     render() {
