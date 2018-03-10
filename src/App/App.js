@@ -6,6 +6,14 @@ import Weather from "../Weather/Weather";
 
 
 class App extends Component {
+
+    handleGetWeather = (e) => {
+
+    }
+
+
+
+
     render() {
         return (
             <div className="App">
@@ -13,7 +21,7 @@ class App extends Component {
                     <Title/>
                 </div>
                 <div className="right">
-                    <Form/>
+                    <Form getWeather={this.handleGetWeather}/>
                     <Weather/>
                 </div>
             </div>
