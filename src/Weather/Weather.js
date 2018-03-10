@@ -1,4 +1,5 @@
 import React from 'react';
+import './Weather.css';
 
 const Weather = (props) => {
     if (props.city && props.country) {
