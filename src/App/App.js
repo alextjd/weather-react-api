@@ -43,7 +43,7 @@ class App extends Component {
                 "temperature": data.main.temp,
                 "humidity": data.main.humidity,
                 "conditions": data.weather[0].description,
-                "error": ''
+                "error": undefined
             });
         } else {
             //Failed request or wrong input
@@ -51,7 +51,7 @@ class App extends Component {
                 'Something went wrong looking for that city.' : 'Please check if you are entering correct values.';
 
             this.setState({
-                "city": null,
+                "city": undefined,
                 "country": undefined,
                 "temperature": undefined,
                 "humidity": undefined,
@@ -61,7 +61,7 @@ class App extends Component {
         }
     };
 
-
+    //Render function
     render() {
         return (
             <div className="App">
@@ -72,10 +72,10 @@ class App extends Component {
                     <Form getWeather={this.handleGetWeather}/>
                     <Weather city={this.state.city}
                              country={this.state.country}
-                        temperature={this.state.temperature}
-                        humidity={this.state.humidity}
-                        conditions={this.state.conditions}
-                        error={this.state.error}/>
+                             temperature={this.state.temperature}
+                             humidity={this.state.humidity}
+                             conditions={this.state.conditions}
+                             error={this.state.error}/>
                 </div>
             </div>
         );
