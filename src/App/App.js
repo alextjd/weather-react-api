@@ -77,6 +77,7 @@ class App extends Component {
                              humidity={this.state.humidity}
                              conditions={this.state.conditions}
                              error={this.state.error}/>
+                    <div className="footer">Made with ️ 🥑 by <a href="https://github.com/alextjd">Alex</a> using React.</div>
                 </div>
             </div>
         );
