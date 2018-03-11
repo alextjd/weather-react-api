@@ -37,12 +37,13 @@ class App extends Component {
 
         //Check if the response is correct or not
         if (data.name && data.sys.country) {
+            let conditions = data.weather[0].description.charAt(0).toUpperCase() + data.weather[0].description.slice(1) + '.';
             this.setState({
                 "city": data.name,
                 "country": data.sys.country,
                 "temperature": data.main.temp,
                 "humidity": data.main.humidity,
-                "conditions": data.weather[0].description,
+                "conditions": conditions,
                 "error": undefined
             });
         } else {
