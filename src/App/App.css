@@ -8,9 +8,15 @@
     box-shadow: 0px 13px 40px -13px rgba(0,0,0,0.75);
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .left, .right {
     background-size: cover;
     box-sizing: border-box;
+    position: relative;
 }
 
 .left {
@@ -31,4 +37,12 @@
     display: flex;
     flex-direction: column;
     background: linear-gradient(to bottom, #0b0f25, #655475);
+}
+
+.footer {
+    font-size: 0.8em;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
 }
