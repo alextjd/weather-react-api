@@ -5,11 +5,13 @@ body {
     padding: 0 !important;
     font-family: 'Lato', sans-serif;
     min-width: 265px;
+    background-color: var(--accent-color);
 }
 
 :root {
     --background-color: #20243e;
     --text-color: #f9f7ff;
     --accent-color: #ecaf9b;
+    --global-radius: 7px;
 }
 

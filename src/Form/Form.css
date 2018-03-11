@@ -27,7 +27,7 @@ button {
     font-family: 'Lato', sans-serif;
     padding: 7px 15px;
     border-radius: 4px;
-    background: var(--background-color);
+    background-color: var(--accent-color);
     color: var(--text-color);
     /*border: solid 1px var(--accent-color);*/
     border: none;
@@ -39,5 +39,5 @@ button {
 }
 
 button:hover {
-    background-color: var(--accent-color);
+
 }

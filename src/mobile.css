@@ -1,7 +1,12 @@
+/*Small window*/
 @media (max-width: 795px) {
     .App {
         flex-direction: column;
-        margin: 0;
+        margin: 0 !important;
+    }
+
+    .left, .right {
+        border-radius: 0 !important;
     }
 
     .left {
@@ -19,7 +24,10 @@
     }
 }
 
+/*Mobile*/
 @media (max-width: 520px) {
+
+
     .form-container {
         display: flex !important;
         margin-top: 20px !important;
