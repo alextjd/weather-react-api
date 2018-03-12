@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
+import back from '../back.jpg';
 import Title from "../Title/Title";
 import Form from "../Form/Form";
 import Weather from "../Weather/Weather";
@@ -66,7 +67,7 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <div className="left">
+                <div className="left" style={{backgroundImage: "url(" + back + ")"}}  >
                     <Title/>
                 </div>
                 <div className="right">

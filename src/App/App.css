@@ -24,7 +24,7 @@ a {
     border-bottom-left-radius: var(--global-radius);
     padding: 15px 30px;
     box-sizing: border-box;
-    background-image: url("https://i.pinimg.com/564x/2c/78/bb/2c78bb1fd4b3d87391615cc22c1dd57f.jpg");
+    /*background-image: url("https://i.pinimg.com/564x/2c/78/bb/2c78bb1fd4b3d87391615cc22c1dd57f.jpg");*/
     flex: 1;
     border-right: solid 1px var(--accent-color);
 }
