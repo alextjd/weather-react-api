@@ -27,6 +27,9 @@
 /*Mobile*/
 @media (max-width: 520px) {
 
+    .App {
+        min-height: 100vh !important;
+    }
 
     .form-container {
         display: flex !important;

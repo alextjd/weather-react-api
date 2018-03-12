@@ -27,10 +27,9 @@ button {
     font-family: 'Lato', sans-serif;
     padding: 7px 15px;
     border-radius: 4px;
-    background-color: var(--accent-color);
+    background-color: var(--background-color);
     color: var(--text-color);
-    /*border: solid 1px var(--accent-color);*/
-    border: none;
+    border: solid 1px var(--accent-color);
     font-size: 1.2em;
     cursor: pointer;
     transition: 0.1s;
@@ -39,5 +38,5 @@ button {
 }
 
 button:hover {
-
+    background-color: var(--accent-color);
 }

@@ -1,6 +1,7 @@
 .weather-container {
-    flex: 5;
+    flex: 2;
     margin-left: 14%;
+    padding-top: 30px;
 }
 
 .weather-container span {
@@ -11,6 +12,6 @@
 .weather-container h3 {
     font-size: 2.4em;
     text-align: center;
-    margin: 0 0 2em;
+    margin: 0 0 1.3em;
 }
 

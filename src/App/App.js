@@ -32,7 +32,7 @@ class App extends Component {
         //Do a request to the API with this info
         //Request using Fetch with asynchronous programming (async/await)
         const response = await fetch('http://api.openweathermap.org/data/2.5/weather?q='
-            + city + ',' + country + '&appid=' + API_KEY);
+            + city + ',' + country + '&appid=' + API_KEY + '&units=metric');
         const data = await response.json();
 
         //Check if the response is correct or not
@@ -77,7 +77,7 @@ class App extends Component {
                              humidity={this.state.humidity}
                              conditions={this.state.conditions}
                              error={this.state.error}/>
-                    <div className="footer">Made with ️ 🥑 by <a href="https://github.com/alextjd">Alex</a> using React.</div>
+                    <div className="footer"><p>Made with ️ 🥑 by <a href="https://github.com/alextjd">Alex</a> using React.</p></div>
                 </div>
             </div>
         );
